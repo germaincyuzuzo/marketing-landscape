@@ -1,0 +1,111 @@
+// colors
+
+$primary: #326dee !default;
+$secondary: #1ac888 !default;
+$error: #d32752 !default;
+$info: #f6c31c !default;
+
+//INSTAGRAM
+
+$light-red: #FF4D4A;
+$linear1: #C87C00 100%, #8B3208 100%, #53200F 82%, #010420 100%;
+$dark-blue: #425466;
+$dark-purple: #231A36;
+$light-blue: #5F6DFF;
+$lighter-gray: #FFFAF9;
+$light-gray: #B2B7BE;
+$light-green: #426666;
+$purple: #B33CDB;
+$yellow: #FBBA33;
+$pink: #DE2879;
+
+// color palette / maps
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "gray": #808080,
+    "black": black,
+    "white": white,
+    "light-red": #FF4D4A,
+    "dark-blue": #425466,
+    "dark-purple": #231A36,
+    "light-blue": #5F6DFF,
+    "lighter-gray": #FFFAF9,
+    "light-gray": #B2B7BE,
+    "light-green": #426666,
+    "light-purple": #B33CDB,
+    "orange-yellow": #FBBA33,
+    "pink": #DE2879,
+);
+
+
+
+.new-one{
+
+    background-color: map-get($colors, "red");
+
+}
+
+    // @debug map-get($colors, "purple");
+    // @debug map-has-key($colors, "purple");
+    // @debug map-get($colors, "$primary"); // fetching color
+    // @debug map-has-key($colors, "terti");// fetching unknown color
+    // @debug map-remove($colors, "primary"); // removing a map color
+    // @debug map-merge($colors, ("pink": #ffc0cb)); // Adding a map color
+
+
+// spacing
+
+$padding: 10px !default;
+$margin: 10px !default;
+$line-height: 10px !default;
+$gap: 10px !default;
+
+// directions
+
+$top: 10px;
+$bottom: 10px;
+$left: 10px;
+$right: 10px;
+
+//borders
+
+$border-thickness: 1px !default;
+$border-radius: 10px !default;
+
+// box shadows
+
+$box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+
+// font sizes
+
+$font-size: 10px !default;
+// $font-size-sm: $font-size * 0.75 !default;
+// $font-size-lg: $font-size * 1.5 !default;
+// $font-size-xl: $font-size * 2 !default;
+// $font-size-xxl: $font-size * 3 !default;
+
+// font weights
+
+$font-weight: 1;
+$font-bold: $font-weight * 600;
+$font-bolder: $font-weight * 800;
+$font-boldest: $font-weight * 1000;
+
+// heights and widths
+
+$height: 10px;
+$width: 10px;
+
+
+// images 
+

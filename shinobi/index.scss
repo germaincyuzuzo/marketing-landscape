@@ -1,0 +1,28 @@
+// variables & functions
+@import 'functions';
+@import 'variables';
+
+
+// reset styles & layout
+@import 'reset-styles';
+@import 'family';
+@import 'breakpoints';
+@import 'grid';
+
+// colors
+@import 'colors';
+
+// images
+
+@import'images';
+
+// components(buttons, cards, navbar)
+@import './components/cards';
+@import './components/button';
+@import './components/navbar';
+@import'./components/input';
+@import'./components/elements';
+// utilities(margin, padding, opacity)
+@import 'utilities';
+
+//responsiveness

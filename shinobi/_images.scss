@@ -1,0 +1,11 @@
+@mixin background ($folder:style1, $img:file, $type:png, $repeat:no-repeat, $x:0, $y:0) {
+    background-image: url(./img/#{$folder}/#{$img}.#{$type});
+    background-repeat: #{$repeat};
+    background-position: #{$x}px #{$y}px;
+}
+
+
+
+.b-img {
+    @include background(style2,BG2,png,repeat-x,10,10);
+  }

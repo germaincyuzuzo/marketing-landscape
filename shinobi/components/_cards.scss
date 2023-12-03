@@ -1,0 +1,30 @@
+// using math
+@use 'sass:math';
+
+.card{
+    display: block;
+    padding: $padding;
+    border: $border-thickness solid #ddd;
+    box-shadow: $box-shadow;
+    border-radius: math.div($border-radius, 2);
+    .card-title{
+        font-size: $font-size;
+        padding-bottom: $padding;
+        font-weight: bold;
+    }
+    .card-body{
+        font-size: $font-size * 2;
+        a{
+            text-decoration: underline;
+        }
+    }
+    .card-icon{
+        max-width: 25%;
+        cursor: pointer;
+      }
+}
+
+// @debug 'my name';
+// @debug math.div(10, 2); // division
+// @debug math.floor(45.2); // removes the decimal and reeturns a whole number
+// @debug math.max(20, 49, 80); // return maximum

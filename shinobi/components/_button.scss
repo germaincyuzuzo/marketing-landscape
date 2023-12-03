@@ -1,0 +1,97 @@
+@mixin btn($bg-color: #e2e2e2) {
+    text-align: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: $padding $padding;
+    border-radius: $border-radius;
+    background-color: $bg-color;
+    // padding: 16px 32px;
+    // border-radius: 24px;
+    // display: inline-block;
+    // font-weight: bold;
+    // font-size: 16px;
+    // text-decoration: none;
+}
+
+.btn{
+    @include btn;
+}
+
+@each $key, $val in $colors {
+    .btn-#{$key} {
+    @include btn($val);
+    &:hover{
+        background-color: lighten($val, 5);
+    }
+    }
+    .btn-outlined-#{$key} {
+        @include btn($bg-color: #fff); 
+        border: $border-thickness solid $val;
+        &:hover{
+            background-color: $val;
+        }
+    }
+    .btn-after-#{$key} {
+        @include btn($bg-color: $val);
+        &::after {
+            content: url("/Instagram/img/arrow.svg");
+            padding: 10px;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            
+        }
+    }
+    .btn-afterl-#{$key} {
+        @include btn($bg-color: $val);
+        &::after {
+            content: url("/Instagram/img/arrow.svg");
+            padding: 5px;
+            position: absolute;
+            border: none;
+            top: 29%;
+            left: 73%;
+            
+        }
+        @media screen and (max-width: $tablet) {
+            &::after {
+                content: url("/Instagram/img/arrow.svg");
+                right: 12%;
+                position: absolute;
+                top: 8px;
+                transition: all 500ms ease;
+    }
+}
+    }
+    .btn-after2-#{$key} {
+        @include btn($bg-color: $val);
+        &::after {
+            content: url("/Instagram/img/rightblack.svg");
+            padding: 10px;
+            position: absolute;
+            top: 3px;
+            right: -30px;
+            
+        }
+    }
+    .btn-after3-#{$key} {
+        @include btn($bg-color: $val);
+        &::after {
+            content: url("/Instagram/img/rightpurple.svg");
+            padding: 10px;
+            position: absolute;
+            top: 3px;
+            right: -30px;
+        }
+
+}
+    .btn-complement-#{$key} {
+        @include btn($val);
+        color: light-comp($val);
+        &:hover{
+            color: $val;
+            background-color: light-comp($val);
+        }
+    }
+}

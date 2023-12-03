@@ -1,0 +1,1015 @@
+// top (directions)
+
+$directions: (
+    "top": $top,
+    "bottom": $bottom,
+    "right": $right,
+    "left": $left
+);
+
+.circles {
+    border: $border-thickness solid black;
+    border-radius: 50%;
+    
+}
+
+.headings {
+    @media screen and (max-width: $tablet-lg) {
+        font-size: 25px;
+        transition: all 500ms ease;
+    }
+}
+
+.nav {
+    @media screen and (max-width: $tablet-lg) {
+        position: relative;
+        &::after {
+            content: url('/Instagram/img/menu-icon.svg');
+            position: absolute;
+            left: 90%;
+            top: 10px;
+            cursor: pointer;
+            transition: all 500ms ease;
+        }
+    }
+}
+
+.hidden {
+    @media screen and (max-width: $tablet-lg) {
+            display: none;
+            transition: all 500ms ease;
+            // position: relative;
+            
+        }
+    }
+
+
+.element-left {
+    position: absolute;
+    top: 37%;
+    @media screen and (max-width: $laptop-md) {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        align-items: center;
+        top: 10%;
+        gap: 80px;
+        transition: all 500ms ease;
+        .para {
+            font-size: 17px;
+            padding-top: 40px;
+            transition: all 500ms ease;
+        }
+    }
+
+    @media screen and (max-width: $laptop) {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        top: 13%;
+        align-items: center;
+        gap: 80px;
+        transition: all 500ms ease;
+        .para {
+            font-size: 15px;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $tablet-lg) {
+        top: 10%;
+        display: block;
+        transition: all 500ms ease;
+        .h1 {
+            font-size: 40px;
+            transition: all 500ms ease;
+        }
+        .para {
+            font-size: 15px;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        top: 7%;
+        transition: all 500ms ease;
+        .para {
+            padding: 0;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $mobile-md) {
+        .h1 {
+            font-size: 30px;
+        }
+        .para {
+            font-size: 13px;
+        }
+        button {
+            width: 180px;
+            padding-left: 0;
+        }
+    }
+    
+}
+
+.element-growth {
+    top: 40%;
+    box-shadow: $box-shadow;
+    right: 31%;
+    @media screen and (max-width: $laptop-md) {
+        width: 300px;
+        left: 13%;
+        top: 55%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $laptop) {
+        width: 300px;
+        left: 13%;
+        top: 57%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-lg) {
+        top: 50%;
+        left: 27%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-sm) {
+        left: 10%;
+        top: 42%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet) {
+        top: 55%;
+        left: 7%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        top: 45%;
+    }
+    @media screen and (max-width: $mobile-lg) {
+        left: 30%;
+        top: 43%;
+    }
+    @media screen and (max-width: $mobile-md) {
+        left: 11%;
+        top: 41%;
+    } 
+    @media screen and (max-width: $mobile) {
+        left: 9%;
+        top: 40%;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        width: 250px;
+        top: 39%;
+        left: 6%;
+        .follower-growth-nav p {
+            font-size: 10px;
+        }
+        .rate-texts hr {
+            width: 200px;
+        }
+    }
+
+}
+
+.element-amanda {
+    position: absolute;
+    top: 14%;
+    right: 30%;
+    @media screen and (max-width: $laptop-md) {
+        left: 17%;
+        top: 33%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $laptop) {
+        left: 17%;
+        top: 37%;
+        transition: all 500ms ease;
+        .ama-para {
+            color: black;
+        }
+    }
+    @media screen and (max-width: $tablet-lg) {
+        left: 70%;
+        top: 10%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-sm) {
+        top: 20%;
+        left: 60%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet) {
+        top: 40%;
+        left: 40%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        top: 32%;
+    }
+    @media screen and (max-width: $mobile-lg) {
+        top: 31%;
+        left: 38%;
+    }
+    @media screen and (max-width: $mobile-md) {
+        left: 19%;
+        top: 29%;
+    }
+    @media screen and (max-width: $mobile) {
+        width: 150px;
+        left: 17%;
+        top: 29%;
+        .ama-para {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: $mobile-sm) {
+        top: 28%;
+        left: 12%;
+    }
+    
+}
+
+.element-media {
+    top: 19%;
+    box-shadow: $box-shadow;
+    right: 2%;
+    transition: all 500ms ease;
+    @media screen and (max-width: $laptop-md) {
+        top: 34%;
+        left: 56%;
+        width: 300px;
+        transition: all 500ms ease;
+
+    }
+    @media screen and (max-width: $laptop) {
+        top: 37%;
+        left: 55%;
+        // width: 150px;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-lg) {
+        top: 32%;
+        left: 65%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-sm) {
+        top: 42%;
+        left: 55%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet) {
+        top: 55%;
+        left: 53%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        top: 66%;
+    }
+    @media screen and (max-width: $mobile-lg) {
+        top: 69%;
+        left: 30%;
+    }
+    @media screen and (max-width: $mobile-md) {
+        top: 67%;
+        left: 12%;
+    }
+    @media screen and (max-width: $mobile) {
+        top: 65%;
+        left: 10%;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        width: 230px;
+        top: 63%;
+        left: 7%;
+        padding: 10px;
+        height: 270px;
+        .media-type-nav p {
+            font-size: 10px;
+            width: 90px;
+            margin: 0;
+        }
+        .text-center img {
+            padding-top: 25px;
+            max-width: 70%;
+        }
+    }
+    
+}
+
+.element-follower {
+    top: 50%;
+    box-shadow: $box-shadow;
+    width: 350px;
+    right: 1%;
+    transition: all 500ms ease;
+    @media screen and (max-width: $laptop-md) {
+        height: 70px;
+        right: 10%;
+        top: 65%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $laptop) {
+        width: 250px;
+        height: 70px;
+        right: 17%;
+        top: 65%;
+        transition: all 500ms ease;
+        
+    }
+    @media screen and (max-width: $tablet-lg) {
+        top: 65%;
+        right: 4%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-sm) {
+        top: 75%;
+        right: 50%;
+        width: 250px;
+        padding: 5px;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet) {
+        top: 80%;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        top: 52%;
+        right: 3%;
+    }
+    @media screen and (max-width: $mobile-lg) {
+        top: 63%;
+        right: 22%;
+    }
+    @media screen and (max-width: $mobile-md) {
+        top: 60%;
+        right: 15%;
+    }
+    @media screen and (max-width: $mobile) {
+        top: 59%;
+        right: 13%;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        top: 57%;
+        right: 4%;
+        p {
+            font-size: 20px;
+        }
+    }
+}
+.bars {
+    &::after {
+        content: "";
+        width: 50%;
+        height: 8px;
+        background: $light-gray;
+        border-radius: 10px;
+        position: absolute;
+        left: 30%;
+        @media screen and (max-width: $laptop) {
+            left: 32%;
+            transition: all 500ms ease;
+        }
+    }
+  }
+  .emoji {
+    top: 60%;
+    right: 9%;
+    transition: all 500ms ease;
+    @media screen and (max-width: $laptop-md) {
+        top: 75%;
+        right: 20%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $laptop) {
+        top: 75%;
+        right: 20%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-lg) {
+        top: 75%;
+        right: 5%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-sm) {
+        top: 75%;
+        right: 15%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet) {
+        top: 80%;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        top: 75%;
+        right: 45%;
+    }
+    @media screen and (max-width: $mobile-lg) {
+        top: 88%;
+        right: 27%;
+    }
+    @media screen and (max-width: $mobile-md) {
+        top: 86%;
+        right: 22%;
+    }
+    @media screen and (max-width: $mobile) {
+        top: 84%;
+        right: 19%;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        top: 82%;
+        right: 12%;
+        padding: 5px;
+    }
+}
+
+.all1 {
+    @media screen and (max-width: $laptop-md) {
+        padding-top: 10%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-lg) {
+        padding-top: 0;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet) {
+        padding-top: 35%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        padding-top: 80%;
+    }
+    @media screen and (max-width: $mobile-lg) {
+        padding-top: 120%;
+    }
+    @media screen and (max-width: $mobile-md){
+        padding-top: 180%;
+    }
+    @media screen and (max-width: $mobile) {
+        padding-top: 600px;
+    }
+}
+
+.footer {
+    @media screen and (max-width: $tablet-sm) {
+        padding-top: 80px;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-md) {
+        img {
+            width: 100px;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        img {
+            width: 80px;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $mobile-lg) {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    @media screen and (max-width: $mobile-md) {
+        p {
+            margin-top: 5px;
+        }
+        .div {
+            flex-wrap: wrap;
+        }
+        img {
+            width: 130px;
+            height: 25px;
+            margin-top: 5px;
+            // gap: 60px;
+        }
+    }
+    @media screen and (max-width: $mobile-sm) {
+        .div {
+            justify-content: center;
+        }
+        img {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.img {
+    @media screen and (max-width: $laptop-lg) {
+        max-width: 100%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $laptop-md) {
+        max-width: 30%;
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $laptop) {
+        max-width: 30%;
+        transition: all 500ms ease;
+    }
+}
+
+.influencer {
+    @media screen and (max-width: $tablet) {
+        flex-direction: column;
+        align-items: center;
+        transition: all 500ms ease;
+         .left {
+             text-align: center;
+        }
+    }
+    @media screen and (max-width: $mobile-md) {
+        .right {
+            width: 210px;
+            img {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+.feature2 {
+    @media screen and (max-width: $laptop-md) {
+            gap: 250px;
+    }
+    @media screen and (max-width: $tablet-lg) {
+            gap: 200px;
+    }
+    @media screen and (max-width: $tablet-md) {
+            gap: 150px;
+    }
+    @media screen and (max-width: $tablet) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .left {
+            margin-top: 20px;
+        }
+        .right {
+            padding-top: 0;
+        }
+    }
+}
+
+
+
+.influencer, .container, .feauture2, .newsletter {
+    @media screen and (max-width: $tablet-lg) {
+        .headings {
+            font-size: 25px;
+            transition: all 500ms ease;
+        }    
+        .paragraphs {
+            font-size: 15px;
+            transition: all 500ms ease;
+        }    
+    }
+    @media screen and (max-width: $laptop-md) {
+        .headings {
+            font-size: 20px;
+            transition: all 500ms ease;
+        }    
+        .paragraphs {
+            font-size: 15px;
+            transition: all 500ms ease;
+        } 
+    }
+    @media screen and (max-width: $mobile-lg){
+        .headings {
+            font-size: 15px;
+        }
+        .paragraphs {
+            font-size: 13px;
+        }
+    }
+}
+
+.service1 {
+    @media screen and (max-width: $tablet) {
+        flex-direction: column;
+        align-items: center;
+        transition: all 500,s ease;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        .colors {
+            gap: 5px;
+        }
+    }
+    @media screen and (max-width: $mobile-md) {
+        .right {
+            width: 250px;
+        }
+    }
+    @media screen and (max-width: $mobile-sm) {
+        .right {
+            width: 230px;
+        }
+    }
+
+}
+
+.testimonial {
+    @media screen and (max-width: $laptop-md) {
+        .testimony {
+            gap: 250px;
+        }
+    }
+    @media screen and (max-width: $tablet-lg) {
+        .testimony {
+            gap: 200px;
+        }
+    }
+    @media screen and (max-width: $tablet-md) {
+        .testimony {
+            gap: 150px;
+        }
+    }
+    @media screen and (max-width: $tablet-sm) {
+        .testimony {
+            gap: 70px;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+            .testimony {
+                gap: 0;
+                flex-direction: column;
+                align-items: center;
+                transition: all 500ms ease;
+            }
+             .left {
+                 text-align: center;
+            }
+            .left > img {
+                left: 45%;
+            }
+
+    }
+    @media screen and (max-width: $mobile-lg) {
+        .right img {
+            max-height: 370px;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $mobile){
+        .right img {
+            max-height: 320px;
+        }
+        .left > img {
+            left: 42%;
+        }
+    }
+    @media screen and (max-width: $mobile-sm) {
+        .right img {
+            max-height: 300px;
+        }
+        .left > img {
+            left: 40%;
+        }
+    }
+}
+
+.service2 {
+    @media screen and (max-width: $tablet-md) {
+        .rebel > p {
+            font-size: 13px;
+            margin: 0;
+        }
+        .num1{
+            font-size: 20px;
+        }
+
+        img {
+            max-width: 27%;
+            padding: 20px;
+        }
+    }
+    @media screen and (max-width: $tablet-sm) {
+        .num1 {
+            font-size: 15px;
+        }
+
+    }
+    @media screen and (max-width: $tablet) {
+        img {
+            display: block;
+            max-width: 50%;
+        }
+    }
+    @media screen and (max-width: $mobile-lg) {
+        img {
+            max-width: 40%;
+            // left: 20%;
+        }
+    }
+    @media screen and (max-width: $mobile){
+        img {
+            max-width: 70%;
+            padding-bottom: 100px;
+        }
+    }
+    @media screen and (max-width: $mobile-sm) {
+        img {
+            max-width: 80%;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+.countdown {
+    @media screen and (max-width: $tablet-lg) {
+        .numbers {
+            gap: 120px;
+            transition: all 500ms ease;
+        }
+    } 
+    @media screen and (max-width: $tablet-sm) {
+        .numbers div p:first-child {
+            font-size: 25px;
+        }
+        .numbers div p:last-child {
+            font-size: 10px;
+        }
+        transition: all 500ms ease;
+    }
+    @media screen and (max-width: $tablet-mini) {
+        .numbers {
+            gap: 80px;
+        }
+    }
+    @media screen and (max-width: $mobile-md) {
+        .numbers {
+            gap: 40px;
+        }
+    }
+    @media screen and (max-width: $mobile){
+        .numbers div p:first-child {
+            font-size: 20px;
+        }
+        .numbers {
+            gap: 15px;
+        }
+    }
+}
+
+.title {
+    @media screen and (max-width: $tablet-sm) {
+        margin-right: 30px;
+        width: 200px;
+    }
+}
+
+.arrows {
+    @media screen and (max-width: $tablet-md) {
+        img {
+            padding-left: 20px;
+        }
+        .only2 {
+            padding-top: 5px;
+        }
+    }
+}
+
+.newsletter {
+    @media screen  and (max-width: $tablet){
+        .subscribe {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            width: 150px;
+            left: 40%;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $mobile){
+        .subscribe {
+            left: 29%;
+        }
+        .paragraphs {
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width: $mobile-sm) {
+        .subscribe {
+            left: 26%;
+            width: 120px;
+        }
+        .paragraphs {
+            font-size: 9px;
+        }
+    }
+}
+
+.nav-footer {
+    @media screen and (max-width: $tablet) {
+        padding-bottom: 10px;
+        transition: all 500ms ease;
+        .h1foot {
+            font-size: 30px;
+            transition: all 500ms ease;
+        }
+        ul li a{
+            font-size: 15px;
+            transition: all 500ms ease;
+        }
+        .logos {
+            gap: 0;
+            transition: all 500ms ease;
+        }
+    }
+    @media screen and (max-width: $mobile-lg) {
+        ul li a{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width: $mobile-md) {
+        ul li a {
+            display: none;
+        }
+    }
+    @media screen and (max-width: $mobile-sm) {
+        .h1foot {
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+.element-rebel1 {
+    top: 70%;
+    left: 1.4%;
+    @media screen and (max-width: $tablet-md) {
+        left: 3.5%;
+        .numbers2 {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        top: 10%;
+        left: 46%;
+        .numbers2 {
+            flex-direction: row;
+        }
+    }
+    @media screen and (max-width: $mobile-lg) {
+        height: 90px;
+        left: 50%;
+        top: 5%;
+    }
+    // @media screen and (max-width: $mobile-md){
+    //     top: 17%;
+    //     left: 40%;
+    // }
+    @media screen and (max-width: $mobile) {
+        top: 17%;
+        left: 40%;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        left: 4%;
+    }
+}
+.element-rebel2 {
+    top: 70%;
+    left: 34.5%;
+    @media screen and (max-width: $tablet-md) {
+        left: 36.2%;
+        .numbers2 {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        top: 43%;
+        left: 46%;
+        .numbers2 {
+            flex-direction: row;
+        }
+    }
+    @media screen and (max-width: $mobile-lg) {
+        height: 90px;
+        left: 50%;
+        top: 39%;
+    }
+    @media screen and (max-width: $mobile) {
+        top: 50%;
+        left: 39%;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        left: 4%;
+    }
+}
+.element-rebel3 {
+    top: 70%;
+    left: 67.6%;
+    @media screen and (max-width: $tablet-md) {
+        left: 69%;
+        .numbers2 {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        top: 76%;
+        left: 46%;
+        .numbers2 {
+            flex-direction: row;
+        }
+    }
+    @media screen and (max-width: $mobile-lg) {
+        height: 90px;
+        left: 50%;
+        top: 72%;
+    }
+    @media screen and (max-width: $mobile) {
+        top: 84%;
+        left: 39%;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        left: 4%;
+    }
+}
+
+
+.element-photo1 {
+    position: absolute;  
+     top: -20px;           
+     right: -5px;        
+  }
+
+
+  .sol{
+    &::after {
+        content: url('/Instagram/img/down.svg');
+        padding-left: 2px;
+    }
+  }
+  .sol2{
+    &::after {
+        content: url('/Instagram/img/downblack.svg');
+        padding-left: 2px;
+    }
+  }
+
+  
+
+
+// @each $key, $val in $directions {
+//     @for $i from -100 through 100 {
+//         .element-#{$key}-#{$i} {
+//             @include element;
+//             top: $val;
+//         }
+//         .element-#{$key}-#{$i} {
+//             @include element;
+//             bottom: $val;
+//         }
+//         .element-#{$key}-#{$i} {
+//             @include element;
+//             right: $val;
+//         }
+//         .element-#{$key}-#{$i} {
+//             @include element;
+//             left: $val;
+//         }
+//     }
+// }
+
+// blur backgrounds
+
+@mixin blur-background {
+    background: #fff; // Set your background image
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.blur {
+    @include blur-background;
+}
+
+@each $key, $val in $colors{
+    .blur-#{$key} {
+        // @include blur-background($val);
+            background: $val;
+        &::before {
+            content: "";
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+$image-path: "/Instagram/img/";
+
+$image-names: (
+    "gradient": url("/Instagram/img/gradient.svg"),
+    "bottomgradient": url("/Instagram/img/bottomgradient.svg"),
+);
+
+
+@each $key, $val in $image-names {
+    .background-image-#{$key} {
+        background: $val no-repeat center center;
+        background-size: cover;
+    }
+}

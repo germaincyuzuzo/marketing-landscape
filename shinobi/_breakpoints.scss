@@ -1,0 +1,138 @@
+$fourks: 2560px;
+$ten80s: 1920px;
+$laptop-lg: 1440px;
+$laptop-md: 1315px;
+$laptop: 1024px;
+$tablet-lg: 978px;
+$tablet-md: 928px;
+$tablet-sm: 870px;
+$tablet: 730px;
+$tablet-mini: 675px;
+$mobile-lg: 600px;
+$mobile-md: 545px;
+$mobile: 375px;
+$mobile-sm: 300px;
+
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+    "fourks": 2560px,
+    "ten80s": 1920px,
+    "laptop-lg": 1440px,
+    "laptop-md": 1315px,
+    "laptop": 1024px,
+    "tablet-lg": 978px,
+    "tablet": 728px,
+    "mobile-lg": 600px,
+    "mobile-md": 375px,
+    "mobile-sm": 300px,
+);
+
+
+
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")){
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: map-get($breakpoints, "sm")){
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: map-get($breakpoints, "md")){
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")){
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: map-get($breakpoints, "xl")){
+        @content;
+    }
+}
+
+@mixin fourks{
+    @media (min-width: map-get($breakpoints, "4ks")){
+        @content;
+    }
+}
+
+@mixin ten8s{
+    @media (min-width: map-get($breakpoints, "1080s")){
+        @content;
+    }
+}
+
+@mixin laptop-lg{
+    @media (min-width: map-get($breakpoints, "laptop-lg")){
+        @content;
+    }
+}
+
+@mixin laptop{
+    @media (min-width: map-get($breakpoints, "laptop")){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: map-get($breakpoints, "tablet")){
+        @content;
+    }
+}
+
+@mixin mobile-lg{
+    @media (min-width: map-get($breakpoints, "mobile-lg")){
+        @content;
+    }
+}
+
+@mixin mobile-md{
+    @media (min-width: map-get($breakpoints, "mobile-md")){
+        @content;
+    }
+}
+
+@mixin mobile-sm{
+    @media (min-width: map-get($breakpoints, "mobile-sm")){
+        @content;
+    }
+}
+
+@mixin breakpoint($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+
+
+.test-responsive{
+    @include xs {
+        color: red;
+    }
+
+    @include sm {
+        color: blue;
+    }
+    @include md {
+        color: green;
+    }
+    @include lg {
+        color: purple;
+    }
+    @include xl {
+        color: orange;
+    }
+    @include breakpoint(1400px){
+        color: pink;
+    }
+}
