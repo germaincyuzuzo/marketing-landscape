@@ -9,5 +9,4 @@ The entire code source is written in different languages:
       (I WOULD REFER TO THIS AS BOOTSRAP OR TAILWIND CSS)
   - GULP was also used while developing the landscape.
 
-    
     NB: No JavaScript was used while creating this landscape.
